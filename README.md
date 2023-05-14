@@ -2,7 +2,7 @@
 Yeah... I don't know what to put here.
 ## Description
 Little Downloader is a simple downloader for downloading files from the internet.
-It is written in [Python](https://python.org) and uses the [`requests`](https://requests.readthedocs.io/en/master/) library.
+This app uses [Python](https://python.org) and the [`requests`](https://requests.readthedocs.io/en/master/) library.
 ## Features
 * Download files from the internet quickly and easily via GUI.
 * A queue system that allows for queuing the download of multiple files.
