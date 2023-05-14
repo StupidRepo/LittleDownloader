@@ -11,10 +11,21 @@ tk.resizable(True, False)
 tk.title('LittleDownloader: Ready')
 
 statusVar = tkinter.StringVar()
-statusVar.set('Enter a URL in the box above, then press Enter to start downloading.')
 
 def out(text):
     statusVar.set(text)
+
+def checkForUpdates():
+    out('Checking for updates...')
+    try:
+        r = requests.get('https://raw.githubusercontent.com/StupidRepo/LittleDownloader/main/version.txt')
+        if r.text != '0.0.1':
+            out('An update is available! Please download the latest version from GitHub!')
+        else:
+            out('Enter a URL in the box above, then press Enter to start downloading.')
+    except Exception as e:
+        pass
+
 
 chunk_size = 512
 
