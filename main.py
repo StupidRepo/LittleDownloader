@@ -19,13 +19,12 @@ def checkForUpdates():
     out('Checking for updates...')
     try:
         r = requests.get('https://raw.githubusercontent.com/StupidRepo/LittleDownloader/main/version.txt')
-        if r.text != '0.0.1':
+        if r.text != 'v0.0.2':
             out('An update is available! Please download the latest version from GitHub!')
         else:
             out('Enter a URL in the box above, then press Enter to start downloading.')
     except Exception as e:
         pass
-
 
 chunk_size = 512
 
@@ -110,5 +109,7 @@ statusLabel.pack()
 
 progressBar = ttk.Progressbar(tk, orient='horizontal', mode='determinate', length=500)
 progressBar.pack()
+
+checkForUpdates()
 
 tk.mainloop()
