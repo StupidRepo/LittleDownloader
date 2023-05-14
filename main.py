@@ -19,7 +19,7 @@ def checkForUpdates():
     out('Checking for updates...')
     try:
         r = requests.get('https://raw.githubusercontent.com/StupidRepo/LittleDownloader/main/version.txt')
-        if int(r.text) > 3:
+        if int(r.text) > 4:
             out('An update is available! Please download the latest version from GitHub!')
         else:
             out('Enter a URL in the box above, then press Enter to start downloading.')

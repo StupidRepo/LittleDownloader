@@ -3,6 +3,9 @@ Yeah... I don't know what to put here.
 ## Description
 Little Downloader is a simple downloader for downloading files from the internet.
 It is written in [Python](https://python.org) and uses the [`requests`](https://requests.readthedocs.io/en/master/) library.
+## Features
+* Download files from the internet quickly and easily via GUI.
+* A queue system that allows for queuing the download of multiple files.
 ## Installing
 ### macOS + Windows + Linux
 > **Note**: For pre-compiled macOS builds (a.k.a the builds linked below for macOS), you will need to open `Terminal.app` and run `chmod +x /path/to/LittleDownloader` to make the file executable. (e.g. if the file is in your Downloads folder, you will need to run `chmod +x ~/Downloads/LittleDownloader/LittleDownloader`)
